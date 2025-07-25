@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bdh:hunter_campsite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 911715,
+    "spacing": 12,
+    "separation": 6
+  }
+}
