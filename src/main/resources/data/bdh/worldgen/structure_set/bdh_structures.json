@@ -1,0 +1,14 @@
+{
+  "structures": [
+    { "structure": "bdh:hunter_campsite", "weight": 4 },
+    { "structure": "bdh:dragon_carrier_gronckle", "weight": 3 },
+    { "structure": "bdh:dragon_carrier_deadly_nadder", "weight": 2 },
+    { "structure": "bdh:dragon_carrier_nightfury", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 93217,
+    "spacing": 32,
+    "separation": 16
+  }
+}

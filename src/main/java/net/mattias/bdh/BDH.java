@@ -1,5 +1,10 @@
 package net.mattias.bdh;
 
+import net.mattias.bdh.core.block.ModBlocks;
+import net.mattias.bdh.core.item.ModCreativeModeTabs;
+import net.mattias.bdh.core.item.ModItems;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -24,12 +29,18 @@ public class BDH {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLUE_OLEANDER.getId(), ModBlocks.POTTED_BLUE_OLEANDER);
+        });
     }
 
 

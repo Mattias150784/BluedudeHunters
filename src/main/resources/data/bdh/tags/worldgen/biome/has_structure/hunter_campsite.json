@@ -11,7 +11,6 @@
     "#minecraft:is_jungle",
     "#minecraft:is_forest",
     "#minecraft:is_taiga",
-    "minecraft:desert",
     "minecraft:plains",
     "minecraft:snowy_plains",
     "minecraft:sunflower_plains",
@@ -28,10 +27,6 @@
     },
     {
       "id": "#c:is_taiga",
-      "required": false
-    },
-    {
-      "id": "#c:is_desert",
       "required": false
     },
     {

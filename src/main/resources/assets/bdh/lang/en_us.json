@@ -1,7 +1,7 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
+  "itemGroup.bdh": "Bluedude Hunters",
   "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item",
+  "block.bdh.blue_oleander": "WIP Blue Oleander",
 
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
